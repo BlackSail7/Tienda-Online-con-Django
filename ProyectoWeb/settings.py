@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'Servicios',
     'blog',
     'contacto',
+    'tienda',
 ]
 
 MIDDLEWARE = [
@@ -149,4 +150,4 @@ EMAIL_PORT = 993
 EMAIL_USE_TLS = True
 EMAIL_HOST = "imap-mail.outlook.com"
 EMAIL_HOST_USER = "mc-krauser@hotmail.com"
-EMAIL_HOST_PASSWORD = "Habbo123" """
+EMAIL_HOST_PASSWORD = "" """

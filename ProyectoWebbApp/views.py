@@ -13,9 +13,7 @@ def home(request):
 
 
 
-def shop(request):
-    
-    return render(request, "ProyectoWebbApp/tienda.html")
+
 
 
 

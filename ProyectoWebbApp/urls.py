@@ -10,7 +10,7 @@ from Servicios.views import services
 urlpatterns = [
     
     path('', views.home, name="Home"),
-    path('tienda/', views.shop, name="Tienda"),
+   
     
     
     
