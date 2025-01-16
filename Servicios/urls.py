@@ -8,7 +8,7 @@ from Servicios import views
 urlpatterns = [
     
 
-    path('servicios', views.services, name="Servicios"),
+    path('servicios/', views.services, name="Servicios"),
 
     
 

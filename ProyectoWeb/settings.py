@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ProyectoWebbApp',
     'Servicios',
+    'blog',
+    'contacto',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +133,20 @@ MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Configuracion de email
+
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_USE_TLS=True
+EMAIL_PORT=587
+EMAIL_HOST_USER="cristian.carmena.ruz@gmail.com"
+EMAIL_HOST_PASSWORD="ifoe ehva gknp qipy"
+
+
+""" EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_PORT = 993
+EMAIL_USE_TLS = True
+EMAIL_HOST = "imap-mail.outlook.com"
+EMAIL_HOST_USER = "mc-krauser@hotmail.com"
+EMAIL_HOST_PASSWORD = "Habbo123" """

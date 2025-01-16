@@ -10,9 +10,9 @@ from Servicios.views import services
 urlpatterns = [
     
     path('', views.home, name="Home"),
-    path('tienda', views.shop, name="Tienda"),
-    path('blog', views.blog, name="Blog"),
-    path('contacto', views.contact, name="Contacto"),
+    path('tienda/', views.shop, name="Tienda"),
+    
+    
     
 
 ]
