@@ -43,6 +43,10 @@ INSTALLED_APPS = [
     'blog',
     'contacto',
     'tienda',
+    'carro',
+    'autenticacion',
+    'crispy_forms',
+     'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +72,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'carro.context_processor.importe_total_carro',
             ],
         },
     },
@@ -144,6 +149,9 @@ EMAIL_PORT=587
 EMAIL_HOST_USER="cristian.carmena.ruz@gmail.com"
 EMAIL_HOST_PASSWORD="ifoe ehva gknp qipy"
 
+
+CRISPY_ALLOWED_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 """ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_PORT = 993

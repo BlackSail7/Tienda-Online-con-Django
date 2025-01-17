@@ -6,7 +6,7 @@ from Servicios.models import Servicio
 # Create your views here.
 
 def home(request):
-    
+   
     return render(request, "ProyectoWebbApp/home.html")
 
 
