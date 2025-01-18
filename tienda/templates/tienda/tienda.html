@@ -7,9 +7,20 @@
 
         <div style="float:right">
 
-        
+        {% if request.user.is_authenticated %}
          
          {% include "carro/widget.html" %}
+
+
+         {% else %}
+
+         <div class="btn btn-success text-center">
+
+         <a href="{% url 'login' %}" style="color: white;">Login para ver carro</a>
+
+         </div>
+
+         {% endif %}
 
 
         </div>
@@ -21,7 +32,7 @@
 
            <div class="col-md-3">
 
-            <div class="card" style="width: 100%; margin: 5px 5px; height: 380px;" >
+            <div class="card" style="width: 100%; margin: 5px 5px; height: 400px;" >
 
                 <img src="{{producto.imagen.url}}" class="card-img-top">
 

@@ -1,5 +1,6 @@
 def importe_total_carro(request):
     total=0
+  #  return {"importe_total_carro":"carro"}
 
     if request.user.is_authenticated:
       
@@ -7,5 +8,8 @@ def importe_total_carro(request):
 
                        
             total=total+(float(value["precio"]))
+    
 
     return {"importe_total_carro":total}    
+
+             

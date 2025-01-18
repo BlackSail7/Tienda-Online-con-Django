@@ -29,5 +29,6 @@ urlpatterns = [
     path('', include('tienda.urls')),
     path('',include('carro.urls')),
     path('',include('autenticacion.urls')),
+    path('',include('pedidos.urls')),
 
 ]
